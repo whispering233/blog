@@ -161,7 +161,7 @@ navbar:
 
 ############################### Cover ############################### > start
 cover:
-  height_scheme: half # full, half
+  height_scheme: full # full, half
   layout_scheme: search # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
   display:
     home: true
@@ -236,7 +236,7 @@ article:
     top_meta: [author, category, date, wordcount, counter] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
-    bottom_meta: [updated, tags]
+    bottom_meta: [date, updated, tags, counter]
     # ----------------
     # 文章页脚组件
     footer_widget:
@@ -690,7 +690,7 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [analytics, social, license, info, copyright]
+  layout: [social, license, copyright]
   social:
     - icon: #fa-solid fa-rss
       url:
@@ -703,7 +703,7 @@ site_footer:
   # site source
   source: https://github.com/volantis-x/volantis-docs/
   # analytics using busuanzi
-  analytics: >
+  analytics:
     <span>本站总访问量为 <span id='busuanzi_value_site_pv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
     <span>访客数为 <span id='busuanzi_value_site_uv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
@@ -803,7 +803,8 @@ plugins:
 
   # 视差滚动效果 Slide Background
   parallax:
-    enable: true
+#    默认轮播
+    enable: false
     position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
     shuffle: true         # shuffle playlist
     duration: 10000       # Duration (ms)
