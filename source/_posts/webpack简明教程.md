@@ -20,8 +20,6 @@ categories:
     - 开发模式 Development：仅能编译 JS 中的 `ES Module` 语法
     - 生产模式 Production：能编译 JS 中的 `ES Module` 语法，还能压缩 JS 代码
 
-<!-- more -->
-
 # 前置环境
 
 # 起步
