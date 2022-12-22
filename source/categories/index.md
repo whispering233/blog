@@ -1,4 +1,5 @@
 ---
-title: categories
-date: 2022-08-02 15:03:33
+layout: category
+index: true
+title: 所有分类
 ---
